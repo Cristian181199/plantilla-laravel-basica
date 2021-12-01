@@ -27,7 +27,7 @@
                             @if (session()->has('usuario'))
                                 <form action="/logout" method="post">
                                     @csrf
-                                    <input type="submit" value="Logout" class="text-lg no-underline text-grey-darkest hover:text-blue-900 ml-2">
+                                    <input type="submit" value="Logout" class=" bg-white text-lg no-underline text-grey-darkest hover:text-blue-900 ml-2">
                                 </form>
                             @else
                                 <a href="/login" class="text-lg no-underline text-grey-darkest hover:text-blue-900 ml-2 @if($login) font-semibold @endif">Login</a>
